@@ -10,18 +10,18 @@
     <mat-toolbar color="primary" class="mat-card" fxFlex="100" style="height: 100%;">
       <mat-card-content>
         <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="16px">
-          <div fxFlex="100" fxFlex.gt-md="25"
+          <div fxFlex="100" fxFlex.gt-md="30"  fxLayout="row"
                fxLayoutAlign="center center"
                fxLayoutAlign.gt-md="start center"
                fxLayoutGap="16px">
             <img mat-card-md-image mat-card-avatar src="/assets/1x.png" alt="">
-            <div>
-              <h1>霍建营</h1>
-              <span>男/1991</span>
+            <div fxLayoutAlign="start center">
+              <div>
+                <h1>霍建营</h1>
+                <h1>全栈工程师</h1>
+                <span>男/1991/高中</span>
+              </div>
             </div>
-          </div>
-          <div fxFlex="100" fxFlex.gt-md="75" fxLayoutAlign="center center" fxLayoutAlign.gt-md="end center">
-            <h1 class="mat-white-font">交互式编程学习平台 (<a href="https://www.programschool.com/" target="_blank">编程学院</a>) 创始人/全栈工程师</h1>
           </div>
         </div>
       </mat-card-content>
@@ -44,6 +44,10 @@
         <div>注重代码质量和模块化开发。</div>
         <div>具备较强研发能力，关注开源项目和新技术。</div>
       </mat-card-content>
+      <mat-card-content>
+        <h1>求职方向：</h1>
+        <p>技术总监/后端开发</p>
+      </mat-card-content>
     </mat-toolbar>
 
     <mat-card class="mat-elevation-z0">
@@ -57,7 +61,57 @@
 
     <mat-card class="mat-elevation-z0">
       <mat-card-content>
-        <h2>工作经历</h2>
+        <h2 style="color: #3e4bf9;">技术栈介绍</h2>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3 fxFlex="70">前端开发</h3>
+        </div>
+        <p>
+          熟悉前端基础以及常用框架，熟悉 Angular 、Typescript ，简单React开发，可以快速转React/VUE方向。
+        </p>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3 fxFlex="70">后端开发</h3>
+        </div>
+        <p>熟悉LAMP开发，熟悉多种PHP框架，最近在用PhalconPHP、Yii2。</p>
+        <p>Java Web方向，熟悉Spring Boot/MVC，和ORM（ebean.io），熟悉RESTful服务构建，以及前后端分离开发。</p>
+        <p>熟悉Golang和Go框架Echo，开发过基于Docker Registry2的私有注册表服务。</p>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3 fxFlex="70">数据库</h3>
+        </div>
+        <p>熟悉MySQL、PostgreSQL</p>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3 fxFlex="70">Linux 和 Docker</h3>
+        </div>
+        <p>熟悉Ubuntu/Centos，熟悉Shell、Linux日常维护，服务编写。</p>
+        <p>熟悉Docker (Go)SDK开发，镜像制作。</p>
+      </mat-card-content>
+      <mat-card-content><mat-divider></mat-divider></mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <h2 style="color: #3e4bf9;">项目</h2>
+      </mat-card-content>
+      <mat-card-content>
+        <h3 href="https://www.programschool.com/" target="_blank">编程学院 - 在线交互式编程学习平台</h3>
+        <p>项目介绍：编程学院是一个在线交互式编程学习网站，同时提供在线教程、在线编程环境和在线IDE，以在线实践的方式学习编程</p>
+        <p>工作：负责项目架构设计和技术研发、架构设计，以及核心代码、组件研发，协调团队开发工作。</p>
+        <h3 href="https://www.programschool.com/hub" target="_blank">Docker 镜像私有存储服务 （类似 <a href="https://hub.docker.com/" target="_blank">hub.docker.com</a>）</h3>
+        <p>
+          使用Golang开发，基于Docker Registry2 开发的私有容器镜像存储服务，实现 docker login/pull/push操作，支持基于数据库认证
+        </p>
+        <h3>其他项目</h3>
+        <p>
+          爬虫项目，浏览器插件开发
+        </p>
+      </mat-card-content>
+      <mat-card-content><mat-divider></mat-divider></mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <h2 style="color: #3e4bf9;">工作经历</h2>
       </mat-card-content>
       <mat-card-content>
         <div fxLayout="row" fxLayoutAlign="space-between start">
@@ -65,11 +119,9 @@
           <h5 fxFlex fxLayoutAlign="end">2016-4月至今</h5>
         </div>
         <h3>职位：</h3>
-        <p>CEO/CTO。</p>
-        <h3>团队：</h3>
-        <p>负责团队组建和管理。</p>
+        <p>技术总监</p>
         <h3>项目：</h3>
-        <p>负责项目技术方案选型、技术研发、核心代码和功能开发。</p>
+        <p>负责团队组建和管理，项目技术方案选型、技术研发、核心代码和功能开发/交付。</p>
         <p>负责项目整体设计、包括原型、数据库、架构方案。</p>
       </mat-card-content>
       <mat-card-content><mat-divider></mat-divider></mat-card-content>
@@ -154,49 +206,7 @@
       </mat-expansion-panel>
     </mat-accordion>
 
-    <mat-card class="mat-elevation-z0">
-      <mat-card-content>
-        <h2>项目</h2>
-      </mat-card-content>
-      <mat-card-content>
-        <h3 href="https://www.programschool.com/" target="_blank">编程学院 - 在线交互式编程学习平台</h3>
-        <p>项目介绍：编程学院是一个在线交互式编程学习网站，同时提供在线教程、在线编程环境和在线IDE，以在线实践的方式学习编程</p>
-        <p>工作：负责项目架构设计和技术研发、架构设计，以及核心代码、组件研发，协调团队开发工作。</p>
-        <h3 href="https://www.programschool.com/hub" target="_blank">Docker 镜像私有存储服务 （类似 <a href="https://hub.docker.com/" target="_blank">hub.docker.com</a>）</h3>
-        <p>
-          使用Golang开发，基于Docker Registry2 开发的私有容器镜像存储服务，实现 docker login/pull/push操作，支持基于数据库认证
-        </p>
-        <h3>其他项目</h3>
-        <p>
-          爬虫项目，浏览器插件开发
-        </p>
-      </mat-card-content>
-      <mat-card-content><mat-divider></mat-divider></mat-card-content>
-    </mat-card>
-
-    <mat-card class="mat-elevation-z0">
-      <mat-card-content>
-        <h3 class="mat-card-title">技术栈</h3>
-      </mat-card-content>
-      <mat-card-content>
-        <h3>后端开发</h3>
-        <div>熟悉多种（Java/Golang/PHP）编程语言和相关开发框架</div>
-      </mat-card-content>
-      <mat-card-content>
-        <h3>前端开发</h3>
-        <div>熟悉常用框架（Angular/React/Vue/JQuery）和UI框架，能够指导团队完成原型和UI设计工作。</div>
-      </mat-card-content>
-      <mat-card-content>
-        <h3>数据库</h3>
-        <div>熟悉MySQL和PostgreSQL</div>
-      </mat-card-content>
-      <mat-card-content>
-        <h3>Linux和容器</h3>
-        <div>熟悉Ubuntu/Centos发行版，以及Linux开发（Shell、 Systemd等）。熟悉Docker容器技术。</div>
-      </mat-card-content>
-      <mat-card-content><mat-divider></mat-divider></mat-card-content>
-    </mat-card>
-    <mat-card class="mat-elevation-z0">
+    <mat-card class="mat-elevation-z0" *ngIf="false">
       <mat-card-content>
         <mat-accordion>
           <mat-expansion-panel class="mat-elevation-z0" (opened)="panelOpenState = true" (closed)="panelOpenState = false">
@@ -221,7 +231,8 @@
                   <h3>后端常用框架</h3>
                   <div fxLayout="row grow" fxLayoutGap="4px grid">
                     <button mat-button fxFlex="100" fxLayoutAlign="start" disableRipple color="primary"> Java： </button>
-                    <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/spring.svg" class="mat-icon" alt=""> <span>Spring 系列</span> </div>
+                    <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/spring.svg" class="mat-icon" alt=""> <span>Spring Boot</span> </div>
+                    <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/spring.svg" class="mat-icon" alt=""> <span>Spring MVC</span> </div>
                     <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://ebean.io/images/logo-200.png" class="mat-icon" alt=""> <span>Ebean ORM</span> </div>
                   </div>
                   <div fxLayout="row grow" fxLayoutGap="4px grid">
@@ -248,7 +259,6 @@
                 <div fxLayout="row grow" fxLayoutGap="4px grid">
                   <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/angular-icon.svg" class="mat-icon" alt=""> <span>Angular</span> </div>
                   <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/react.svg" class="mat-icon" alt=""> <span>React</span> </div>
-                  <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/vue.svg" class="mat-icon" alt=""> <span>VUE</span> </div>
                   <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/npm.svg" class="mat-icon" alt=""> <span>NPM</span> </div>
                   <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/yarn.svg" class="mat-icon" alt=""> <span>Yarn</span> </div>
                   <div fxLayoutGap="8px" fxFlex="150px" fxLayoutAlign="start center"> <img src="https://cdn.svgporn.com/logos/nodejs.svg" class="mat-icon" alt=""> <span>Node</span> </div>
