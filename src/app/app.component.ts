@@ -8,4 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'resume';
   panelOpenState = false;
+  panelOpenState2 = false;
 }
