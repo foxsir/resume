@@ -4,3 +4,13 @@
 mat-toolbar {
   white-space: inherit;
 }
+
+blockquote {
+  margin-inline-start: 0;
+  padding-inline-start: 10px;
+  margin-inline-end: 10px;
+  border-left: 4px solid #3e4bf9;
+  background: #d8dbfd;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
