@@ -185,6 +185,21 @@
         </div>
       </mat-card-content>
     </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <mat-card-title>Links</mat-card-title>
+        <mat-divider inset></mat-divider>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="column" fxLayoutGap="16px">
+          <div fxLayout="row" fxLayoutGap="6px" *ngFor="let link of links">
+            <div fxFlex="150px">{{link.text}}</div>
+            <div fxFlex="auto"><a [href]="link.href" target="_blank">{{link.href}}</a></div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
   </div>
 </div>
 

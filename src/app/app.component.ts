@@ -119,5 +119,13 @@ export class AppComponent {
     },
   ];
 
+  links = [
+    {text: 'Electron+ng项目', href: 'https://github.com/foxsir/electron-angular'},
+    {text: 'MD编辑器（规划中）', href: 'https://github.com/fluentwrite/fluentwrite'},
+    {text: 'Java 网站后台', href: 'https://github.com/licenseair/licenseair-backend'},
+    {text: 'Go Proxy', href: 'https://github.com/programschool/proxy-service'},
+    {text: 'GO CLI程序', href: 'https://github.com/programschool/pscli'},
+  ];
+
 
 }
