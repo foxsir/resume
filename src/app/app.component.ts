@@ -125,6 +125,7 @@ export class AppComponent {
     {text: 'Java 网站后台', href: 'https://github.com/licenseair/licenseair-backend'},
     {text: 'Go Proxy', href: 'https://github.com/programschool/proxy-service'},
     {text: 'GO CLI程序', href: 'https://github.com/programschool/pscli'},
+    {text: '简历', href: 'https://github.com/foxsir/resume/'},
   ];
 
 
