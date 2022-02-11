@@ -1,0 +1,194 @@
+<br>
+<br>
+
+<div fxLayout="row" fxLayoutAlign="center center">
+  <div fxFlex="90" fxFlex.gt-md="900px" fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="16px">
+    <!--<div fxFlex="100" fxLayout="row" fxLayoutAlign="space-between center">-->
+    <!--  <a mat-button color="accent" target="_blank" href="./assets/简历｜霍建营.pdf">下载PDF</a>-->
+    <!--</div>-->
+    <mat-toolbar color="primary" class="mat-card" fxFlex="100" style="height: 100%;">
+      <mat-card-content>
+        <div fxLayout="column" fxLayout.gt-md="row" fxLayoutGap="16px">
+          <div fxFlex="100" fxFlex.gt-md="30"  fxLayout="row"
+               fxLayoutAlign="center center"
+               fxLayoutAlign.gt-md="start center"
+               fxLayoutGap="16px">
+            <img mat-card-md-image mat-card-avatar src="/assets/1x.png" alt="">
+            <div fxLayoutAlign="start center">
+              <div>
+                <h1>霍建营</h1>
+                <h1>全栈工程师</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="column" fxLayout.gt-md="row" class="mat-white-font">
+          <div fxLayoutAlign="start center">
+            <mat-icon>phone</mat-icon>
+            <a mat-button href="tel: 16631132230">16631132230（7x9:00-22:00）</a>
+          </div>
+          <div fxLayoutAlign="start center">
+            <mat-icon>email</mat-icon>
+            <a mat-button href="mailto: programschool@qq.com">programschool@qq.com（7x24）</a>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-content>
+        <h4>介绍：</h4>
+        <div>全栈工程师，从事开发工作8年（12-21），带过团队。</div>
+        <div>熟悉前后端开发、数据模型设计、原型设计。负责项目整体架构设计，和核心代码开发。</div>
+        <div>注重代码质量和模块化开发。</div>
+        <div>具备较强研发能力，关注开源项目和新技术。</div>
+      </mat-card-content>
+      <mat-card-content>
+        <h1>求职方向：</h1>
+        <p>前端开发主管/高级前端开发</p>
+      </mat-card-content>
+    </mat-toolbar>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <a>项目网站:</a>
+        <a mat-button color="primary" href="https://www.programschool.com/" target="_blank">programschool.com</a>
+        <a>GITHUB:</a>
+        <a mat-button color="primary" href="https://github.com/foxsir" target="_blank">https://github.com/foxsir</a>
+        <a mat-button color="primary" href="https://github.com/programschool" target="_blank">https://github.com/programschool</a>
+      </mat-card-content>
+      <mat-card-content><mat-divider></mat-divider></mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <h1 style="color: #3e4bf9;">技术栈</h1>
+      </mat-card-content>
+      <mat-card-content>
+        <blockquote><h3>非常熟练</h3></blockquote>
+        <h4>语言：</h4>
+        <p>Javascript/Typescript、PHP、HTML/CSS</p>
+        <h4>工具：</h4>
+        <p>Docker</p>
+        <h4>框架/库：</h4>
+        <p>Angular/Angular Material、Yii2、PhalconPHP、antd、Bootstrap</p>
+        <blockquote><h3>一般熟练</h3></blockquote>
+        <h4>语言：</h4>
+        <p>Java、Golang</p>
+        <h4>框架/库：</h4>
+        <p>Java（SpringBoot、Ebean ORM）、Go（Echo、Docker SDK）</p>
+        <h4>系统/数据库：</h4>
+        <p>Linux/Ubuntu、Mysql、PostgreSQL</p>
+        <blockquote><h3>较少用</h3></blockquote>
+        <h4>语言：</h4>
+        <p>Shell</p>
+        <h4>框架/库：</h4>
+        <p>React</p>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <h1 style="color: #3e4bf9;">项目</h1>
+      </mat-card-content>
+      <mat-card-content *ngIf="false">
+        <p>https://github.com/foxsir/book-conver-generator 图书封面生成 (React)</p>
+        <p>https://github.com/programschool/build 命令行工具 (Shell)</p>
+        <p>https://programschool.com 后端</p>
+        <p>https://boxlayer.com/v2/ 类似Docker Hub</p>
+        <p>https://github.com/programschool/pscli 命令行工具 (Go)</p>
+      </mat-card-content>
+      <mat-card-content>
+        <div *ngFor="let project of projectList">
+          <h4>项目名称: {{project.name}}</h4>
+          <div>
+            <div fxLayout="row" *ngIf="project.type">
+              <div fxFlex="80px" fxLayoutAlign="space-between center" [innerHTML]="wrapSpan('项目类型')">
+              </div>
+              <div fxFlex>
+                {{project.type}}
+              </div>
+            </div>
+            <div fxLayout="row" *ngIf="project.site">
+              <div fxFlex="80px" fxLayoutAlign="space-between center" [innerHTML]="wrapSpan('项目网址')">
+              </div>
+              <div fxFlex>
+                <a color="primary" [href]="project.site" target="_blank">{{project.site}}</a>
+              </div>
+            </div>
+            <div fxLayout="row" *ngFor="let stack of project.stacks">
+              <div fxFlex="80px" fxLayoutAlign="space-between center" [innerHTML]="wrapSpan(stack.name)">
+              </div>
+              <div fxFlex>
+                {{stack.intro}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <h2 style="color: #3e4bf9;">工作经历</h2>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3>河北圆伞网络科技有限公司</h3>
+          <h5>2016-4月至今</h5>
+        </div>
+        <h3>职位：</h3>
+        <p>技术总监</p>
+        <h3>职责：</h3>
+        <p>负责团队组建和管理，项目技术方案选型、技术研发、核心代码和功能开发/交付</p>
+        <p>负责项目整体设计、包括原型、数据库、架构方案</p>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3>石家庄梧桐树电子商务有限公司</h3>
+          <h5>2015-5月 ～ 2016-3月</h5>
+        </div>
+        <h3>职位：</h3>
+        <p>技术总监</p>
+        <h3>职责：</h3>
+        <p>负责团队组建和管理，技术方案预研，实施。</p>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3>北京安宁创新网络科技股份有限公司</h3>
+          <h5>2015-5月 ～ 2015-8月 （试用期离职）</h5>
+        </div>
+        <h3>职位：</h3>
+        <p>后端开发工程师</p>
+        <h3>职责：</h3>
+        <p>负责邮件系统开发</p>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3>河北点点乐电子商务有限公司</h3>
+          <h5>2014-2月 ～ 2015-5月</h5>
+        </div>
+        <h3>职位：</h3>
+        <p>后端开发工程师</p>
+        <h3>职责：</h3>
+        <p>负责电商网站开发</p>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutAlign="space-between start">
+          <h3>信石弘生广告传媒（北京）有限公司</h3>
+          <h5>2012-12月 ～ 2014-1月</h5>
+        </div>
+        <h3>职位：</h3>
+        <p>后端开发工程师</p>
+        <h3>职责：</h3>
+        <p>负责客户网站、舆情系统开发</p>
+      </mat-card-content>
+      <mat-card-content><mat-divider></mat-divider></mat-card-content>
+    </mat-card>
+  </div>
+</div>
+
+<br>
+<br>
+<br>
+<br>
+

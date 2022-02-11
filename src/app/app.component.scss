@@ -14,3 +14,21 @@ blockquote {
   padding-top: 4px;
   padding-bottom: 4px;
 }
+
+.avatar {
+  width: 100%;
+  background: #7ac3fd;
+  border-radius: 4px;
+}
+
+.font {
+  &.primary {
+    color: #3e4bf9;
+  }
+  &.warn {
+    color: #f4360a;
+  }
+  &.accent {
+    color: #ffce03;
+  }
+}

@@ -20,6 +20,13 @@ export class AppComponent {
   panelOpenState = false;
   panelOpenState2 = false;
 
+  baseInfo = [
+    {title: '霍建营', value: ''},
+    {title: '电话', value: '<a href="tel:16631132230">16631132230</a>'},
+    {title: '邮箱', value: '<a href="mailto:838394225@qq.com">838394225@qq.com</a>'},
+    {title: '意向', value: '后端研发/前端研发/技术主管'},
+  ];
+
   projectList: Project[] = [
     {
       name: "编程学院（在线编程学习平台）",
@@ -60,17 +67,57 @@ export class AppComponent {
     },
   ];
 
-  wrapSpan(name: string): string {
-    const spans: string[] = [];
-    name.replace("：", "").split("").forEach((sp, index) => {
-      if (index === name.length - 1) {
-        sp = sp + "：";
-      }
-      spans.push(['<span>', sp, '</span>'].join(""));
-    });
-
-    return spans.join("");
-  }
+  companies = [
+    {
+      dateRange: '2021-06 - 2022-01',
+      name: '北京禾下网络科技有限公司',
+      role: '前端组长',
+      works: [
+        '负责通讯软件PC客户端开发'
+      ]
+    },
+    {
+      dateRange: '2016-4 - 2021-05',
+      name: '河北圆伞网络科技有限公司',
+      role: '技术主管',
+      works: [
+        '负责团队组建和管理，项目技术方案选型、技术研发、核心代码和功能开发/交付',
+        '负责项目整体设计、包括原型、数据库、架构方案'
+      ]
+    },
+    {
+      dateRange: '2015-05 - 2016-03',
+      name: '石家庄梧桐树电子商务有限公司',
+      role: '技术主管',
+      works: [
+        '负责团队组建和管理，技术方案预研，实施',
+      ]
+    },
+    {
+      dateRange: '2015-05 - 2015-08',
+      name: '北京安宁创新网络科技股份（石家庄）有限公司',
+      role: '后端开发工程师',
+      works: [
+        '负责邮件系统开发',
+      ]
+    },
+    {
+      dateRange: '2014-02 - 2015-05',
+      name: '河北点点乐电子商务有限公司',
+      role: '后端开发工程师',
+      works: [
+        '负责电商网站开发',
+      ]
+    },
+    {
+      dateRange: '2012-12 ～ 2014-01',
+      name: '信石弘生广告传媒（北京）有限公司',
+      role: '后端开发工程师',
+      works: [
+        '负责客户网站、舆情系统开发',
+      ]
+    },
+  ];
 
 
 }
