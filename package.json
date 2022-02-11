@@ -5,7 +5,7 @@
     "ng": "ng",
     "start": "ng serve --port 3333",
     "build": "ng build",
-    "gh-pages": "ng build && mv dist/resume/* docs",
+    "gh-pages": "ng build && rm -rf docs/* && mv dist/resume/* docs",
     "test": "ng test",
     "lint": "ng lint",
     "e2e": "ng e2e"
