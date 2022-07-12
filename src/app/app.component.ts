@@ -21,7 +21,7 @@ export class AppComponent {
   panelOpenState2 = false;
 
   baseInfo = [
-    {title: '霍建营', value: ''},
+    {title: '霍建营', value: '10年开发经验（12年至今）'},
     {title: '电话', value: '<a href="tel:16631132230">16631132230</a>'},
     {title: '邮箱', value: '<a href="mailto:838394225@qq.com">838394225@qq.com</a>'},
     {title: '意向', value: '高级前端开发'},
