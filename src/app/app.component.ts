@@ -24,7 +24,7 @@ export class AppComponent {
     {title: '霍建营', value: ''},
     {title: '电话', value: '<a href="tel:16631132230">16631132230</a>'},
     {title: '邮箱', value: '<a href="mailto:838394225@qq.com">838394225@qq.com</a>'},
-    {title: '意向', value: '后端研发/前端研发/技术主管'},
+    {title: '意向', value: '高级前端开发'},
   ];
 
   projectList: Project[] = [
@@ -120,12 +120,11 @@ export class AppComponent {
   ];
 
   links = [
-    {text: 'Electron+ng项目', href: 'https://github.com/foxsir/electron-angular'},
-    {text: 'MD编辑器（规划中）', href: 'https://github.com/fluentwrite/fluentwrite'},
-    {text: 'Java 网站后台', href: 'https://github.com/licenseair/licenseair-backend'},
-    {text: 'Go Proxy', href: 'https://github.com/programschool/proxy-service'},
-    {text: 'GO CLI程序', href: 'https://github.com/programschool/pscli'},
-    {text: '简历', href: 'https://github.com/foxsir/resume/'},
+    {text: 'Github', href: 'https://github.com/foxsir'},
+    // {text: 'MD编辑器（规划中）', href: 'https://github.com/fluentwrite/fluentwrite'},
+    // {text: 'Java 网站后台', href: 'https://github.com/licenseair/licenseair-backend'},
+    // {text: 'Go Proxy', href: 'https://github.com/programschool/proxy-service'},
+    // {text: 'GO CLI程序', href: 'https://github.com/programschool/pscli'},
   ];
 
 
