@@ -37,8 +37,8 @@
         <p>熟悉HTML语义话、Flex布局、CSS3动画（了解）</p>
         <p>了解svg和canvas基本使用</p>
         <p>熟悉本地存储、Cookie使用，缓存使用</p>
-        <p>编写过多个Chrome插件，提交过开源项目PR(编辑器中文语言插件)</p>
-        <p>熟悉一些后端基础：Java/SpringBoot/SQL等</p>
+        <p>编写过多个Chrome插件，提交过开源项目PR(c9编辑器语言插件)</p>
+        <p>熟悉一些后端基础：Java/SpringBoot/SQL</p>
         <p>熟悉Linux、Docker、Nginx和相关部署</p>
         <p>有带团队经验，熟悉云服务接入：短信、邮件系统等（aliyun）</p>
       </mat-card-content>
@@ -69,7 +69,83 @@
             <p>熟悉Java/SpringBoot，熟悉Linux（Ubuntu）系统</p>
             <p><b>SpringBoot：</b>可以写一些基础业务，了解Spring Security、JWT，Gson等组件使用</p>
             <p><b>Linux：</b>熟悉日常使用，可以编写Service文件，熟悉云服务流程，简单Shell编写</p>
-            <p><b>Docker：</b>熟悉docker cli/docker-compose常用命令，熟悉镜像制作，有开发Docker SDK经验，熟悉Dockerfile编写</p>
+            <p><b>Docker：</b>熟悉docker cli/docker compose常用命令，熟悉镜像制作，有开发Docker SDK经验，熟悉Dockerfile编写</p>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
+        <mat-card-title>最近项目</mat-card-title>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="6px">
+          <!--<div fxFlex="150px">2021-06 - 2022-01</div>-->
+          <div fxFlex="auto">
+            <div fxLayout="row" fxLayoutAlign="space-between">
+              <mat-card-subtitle class="font primary">公司网站（React）</mat-card-subtitle>
+              <mat-card-subtitle>前端组长</mat-card-subtitle>
+            </div>
+            <p>使用React17+Chakra-ui开发的社区类型网站 (<a target="_blank" href="https://www.maplecloudy.com/">maplecloudy.com</a>)</p>
+            <div fxLayout="row">
+              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
+              <mat-chip-list aria-label="Fish selection">
+                <mat-chip>React</mat-chip>
+                <mat-chip>Chakra-ui</mat-chip>
+                <mat-chip>useRequest</mat-chip>
+                <mat-chip>Hooks</mat-chip>
+              </mat-chip-list>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="6px">
+          <!--<div fxFlex="150px">2021-06 - 2022-01</div>-->
+          <div fxFlex="auto">
+            <div fxLayout="row" fxLayoutAlign="space-between">
+              <mat-card-subtitle class="font primary">社区类型网站 （React）</mat-card-subtitle>
+              <mat-card-subtitle>PC端负责人</mat-card-subtitle>
+            </div>
+            <p>基于Angular+Electron和SQLite3开发聊天软件客户端（Windows）, 负责PC端架构和开发工作，后端API对接</p>
+            <p>项目难点：1. 解决打开多窗口问题 2. 开发虚拟列表滚动组件（随机高度Item）</p>
+            <div fxLayout="row">
+              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
+              <mat-chip-list aria-label="Fish selection">
+                <mat-chip>Electron</mat-chip>
+                <mat-chip>SQLite3</mat-chip>
+                <mat-chip>Angular/Material</mat-chip>
+                <mat-chip>Typescript</mat-chip>
+                <mat-chip>WebSocket</mat-chip>
+              </mat-chip-list>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="6px">
+          <!--<div fxFlex="150px">2016-04 - 2019-05</div>-->
+          <div fxFlex="auto">
+            <div>
+              <div fxLayout="row" fxLayoutAlign="space-between">
+                <mat-card-subtitle class="font primary">在线编程平台（Angular）</mat-card-subtitle>
+                <mat-card-subtitle>项目负责人</mat-card-subtitle>
+              </div>
+              <p>一个在线交互式编程学习网站，可在线运行多种编程语言代码，具有完整项目运行能力。负责网站整体架构和开发</p>
+              <p>难点：1. 集成Web代码编辑器 2. 自研Docker镜像存储系统 3. Docker SDK开发</p>
+              <div fxLayout="row">
+                <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
+                <mat-chip-list aria-label="Fish selection">
+                  <mat-chip>Java/Golang</mat-chip>
+                  <mat-chip>Angular/Typescript</mat-chip>
+                  <mat-chip>PostgreSQL</mat-chip>
+                  <mat-chip>Docker</mat-chip>
+                  <mat-chip>Linux</mat-chip>
+                </mat-chip-list>
+              </div>
+            </div>
           </div>
         </div>
       </mat-card-content>
@@ -88,61 +164,6 @@
         <div fxLayout="row" fxLayoutGap="6px">
           <div fxFlex="150px">2012-06 - 2012.12</div>
           <div fxFlex="auto">北京兄弟连LAMP培训</div>
-        </div>
-      </mat-card-content>
-    </mat-card>
-
-    <mat-card class="mat-elevation-z0">
-      <mat-card-content>
-        <mat-card-title>最近项目</mat-card-title>
-        <mat-divider></mat-divider>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="150px">2021-06 - 2022-01</div>
-          <div fxFlex="auto">
-            <div fxLayout="row" fxLayoutAlign="space-between">
-              <mat-card-subtitle class="font primary">通讯软件PC客户端</mat-card-subtitle>
-              <mat-card-subtitle>PC端负责人</mat-card-subtitle>
-            </div>
-            <p>基于Electron和SQLite3开发聊天软件客户端（Windows）, 负责PC端架构和开发工作，后端API对接</p>
-            <p>项目难点：1. 解决打开多窗口问题 2. 开发虚拟列表滚动组件（随机高度Item）</p>
-            <div fxLayout="row">
-              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
-              <mat-chip-list aria-label="Fish selection">
-                <mat-chip>Electron</mat-chip>
-                <mat-chip>SQLite3</mat-chip>
-                <mat-chip>Angular/Material</mat-chip>
-                <mat-chip>Typescript</mat-chip>
-                <mat-chip>WebSocket</mat-chip>
-              </mat-chip-list>
-            </div>
-          </div>
-        </div>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="150px">2016-04 - 2019-05</div>
-          <div fxFlex="auto">
-            <div>
-              <div fxLayout="row" fxLayoutAlign="space-between">
-                <mat-card-subtitle class="font primary">在线编程平台</mat-card-subtitle>
-                <mat-card-subtitle>项目负责人</mat-card-subtitle>
-              </div>
-              <p>一个在线交互式编程学习网站，可在线运行多种编程语言代码，具有完整项目运行能力。负责网站整体架构和开发</p>
-              <p>难点：1. 集成Web代码编辑器 2. 自研Docker镜像存储系统 3. Docker SDK开发</p>
-              <div fxLayout="row">
-                <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
-                <mat-chip-list aria-label="Fish selection">
-                  <mat-chip>Java/Golang</mat-chip>
-                  <mat-chip>Angular/Typescript</mat-chip>
-                  <mat-chip>PostgreSQL</mat-chip>
-                  <mat-chip>Docker</mat-chip>
-                  <mat-chip>Linux</mat-chip>
-                </mat-chip-list>
-              </div>
-            </div>
-          </div>
         </div>
       </mat-card-content>
     </mat-card>
