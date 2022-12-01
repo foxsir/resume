@@ -31,8 +31,9 @@
       </mat-card-content>
       <mat-card-content>
         <p>2012年底开始从事开发工作，7年LAMP（Linux/Apache/MySQL/PHP）技术栈开发经验，10年前端开发经验。</p>
-        <p>熟悉三大框架（Angular主/React/Vue），有5年Typescript使用经验，有2年的Java和Golang开发经验，熟悉Docker/Docker Go SDK开发。</p>
-        <p>执⾏⼒强，涉猎⼴泛。</p>
+        <p>熟悉三大框架（Angular/React/Vue3），有5年Typescript使用经验，有2年的Java和Golang开发经验，熟悉Docker/Docker GoSDK。</p>
+        <p>熟悉PostgreSQL, MySQL, SQLite, 熟悉Linux系统（Ubuntu）</p>
+        <p>有使用 <b>Fabric.js</b> 绘图经验，和使用 <b>ElectronJS</b> 客户端开发经验</p>
       </mat-card-content>
     </mat-card>
 
@@ -42,24 +43,29 @@
         <mat-divider></mat-divider>
       </mat-card-content>
       <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="150px">前端</div>
+        <div fxLayout="column" fxLayoutGap="6px">
           <div fxFlex="auto">
-            <p>熟悉JS/ES6/Typescript/CSS/SCSS，能编写独⽴npm模块，可以使⽤js/golang写命令⾏程序</p>
-            <p>熟悉主流前端框架开发以及周边⽣态 （Angular、React、VUE3）</p>
-            <p>有图形编辑开发经验，使⽤Fabric.js 和 maker.js</p>
-            <p>熟悉Electron客户端开发</p>
+            <h3>前端</h3>
+          </div>
+          <div fxFlex="auto">
+            <p><b>前端基础：</b> 熟悉JS/ES6/Typescript/CSS/SCSS，能编写独⽴npm模块，可以使⽤js/golang写命令⾏程序</p>
+            <p><b>前端框架：</b> 熟悉主流前端框架开发以及周边⽣态 <b>（Angular、React、VUE3）</b></p>
+            <p><b>PC客户端：</b> 使用ElectronJS完成过两个客户端项目 (IM客户端和数据可视化客户端)</p>
+            <p><b>其他：</b> 使用Fabric.js开发过图表绘制（刻度线、轮廓线，简单图形编辑），使用maker.js开发AutoCAD DXF文件导出功能</p>
           </div>
         </div>
       </mat-card-content>
       <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="150px">后端</div>
+        <div fxLayout="column" fxLayoutGap="6px">
           <div fxFlex="auto">
-            <p>熟悉Java/SpringBoot，熟悉Linux（Ubuntu）系统</p>
-            <p><b>SpringBoot：</b>可以写一些基础业务，了解Spring Security、JWT，Gson等组件使用</p>
-            <p><b>Linux：</b>熟悉日常使用，可以编写Service文件，熟悉云服务流程，简单Shell编写</p>
+            <h3>后端</h3>
+          </div>
+          <div fxFlex="auto">
+            <p><b>Java：</b>两年Java开发经验，主要使用SpringBoot，和Spring Security、JWT，Gson等组件，以及阿里云短/信支付SDK。</p>
+            <p><b>GoLang：</b>使用Go开发Docker SDK，框架使用Echo。</p>
+            <p><b>PHP：</b>12-19年，7年时间使用PHP开发后端程序。</p>
             <p><b>Docker：</b>熟悉docker cli/docker compose常用命令，熟悉镜像制作，有开发Docker SDK经验，熟悉Dockerfile编写</p>
+            <p><b>Linux：</b>主要使用Ubuntu，可以编写Service，熟悉云服务部署流程，Shell编写</p>
           </div>
         </div>
       </mat-card-content>
@@ -72,10 +78,47 @@
       </mat-card-content>
       <mat-card-content>
         <div fxLayout="row" fxLayoutGap="6px">
-          <!--<div fxFlex="150px">2021-06 - 2022-01</div>-->
           <div fxFlex="auto">
             <div fxLayout="row" fxLayoutAlign="space-between">
-              <mat-card-subtitle class="font primary">公司网站（React）</mat-card-subtitle>
+              <mat-card-subtitle class="font primary">报告填报系统表单</mat-card-subtitle>
+              <mat-card-subtitle>负责前端</mat-card-subtitle>
+            </div>
+            <p>React17 + Antd4 + mobx</p>
+            <div fxLayout="row">
+              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
+              <mat-chip-list aria-label="Fish selection">
+                <mat-chip>React 17</mat-chip>
+                <mat-chip>mobx</mat-chip>
+              </mat-chip-list>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="6px">
+          <div fxFlex="auto">
+            <div fxLayout="row" fxLayoutAlign="space-between">
+              <mat-card-subtitle class="font primary">数据可视化客户端</mat-card-subtitle>
+              <mat-card-subtitle>负责前端</mat-card-subtitle>
+            </div>
+            <p>Angular V14 + Electron + SQLite客户端项目</p>
+            <div fxLayout="row">
+              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
+              <mat-chip-list aria-label="Fish selection">
+                <mat-chip>Angular 14</mat-chip>
+                <mat-chip>Material Angular</mat-chip>
+                <mat-chip>Electron</mat-chip>
+                <mat-chip>SQLite</mat-chip>
+              </mat-chip-list>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="row" fxLayoutGap="6px">
+          <div fxFlex="auto">
+            <div fxLayout="row" fxLayoutAlign="space-between">
+              <mat-card-subtitle class="font primary">公司平台网站（React）</mat-card-subtitle>
               <mat-card-subtitle>前端组长</mat-card-subtitle>
             </div>
             <p>使用React17+Chakra-ui开发的社区类型网站 (<a target="_blank" href="https://www.maplecloudy.com/">maplecloudy.com</a>)</p>
@@ -93,10 +136,9 @@
       </mat-card-content>
       <mat-card-content>
         <div fxLayout="row" fxLayoutGap="6px">
-          <!--<div fxFlex="150px">2021-06 - 2022-01</div>-->
           <div fxFlex="auto">
             <div fxLayout="row" fxLayoutAlign="space-between">
-              <mat-card-subtitle class="font primary">社区类型网站 （React）</mat-card-subtitle>
+              <mat-card-subtitle class="font primary">通讯软件PC客户端</mat-card-subtitle>
               <mat-card-subtitle>PC端负责人</mat-card-subtitle>
             </div>
             <p>基于Angular+Electron和SQLite3开发聊天软件客户端（Windows）, 负责PC端架构和开发工作，后端API对接</p>
@@ -116,7 +158,6 @@
       </mat-card-content>
       <mat-card-content>
         <div fxLayout="row" fxLayoutGap="6px">
-          <!--<div fxFlex="150px">2016-04 - 2019-05</div>-->
           <div fxFlex="auto">
             <div>
               <div fxLayout="row" fxLayoutAlign="space-between">
@@ -158,7 +199,7 @@
       </mat-card-content>
     </mat-card>
 
-    <mat-card class="mat-elevation-z0" *ngIf="false">
+    <mat-card class="mat-elevation-z0">
       <mat-card-content>
         <mat-card-title>工作经历</mat-card-title>
         <mat-divider></mat-divider>
