@@ -1,0 +1,15 @@
+@media print {
+  * {
+    page-break-after: avoid;
+  }
+
+  table {
+    page-break-inside: avoid;
+    page-break-after: avoid;
+    page-break-before: avoid;
+
+    tr {
+      page-break-inside: avoid;
+    }
+  }
+}
