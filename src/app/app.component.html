@@ -6,7 +6,10 @@
     <mat-card class="mat-elevation-z0">
       <mat-card-content>
         <div fxLayout="row" fxLayoutGap="4px">
-          <div fxFlex="auto" fxLayoutAlign="stretch end">
+          <div fxFlex="auto" fxLayoutAlign="stretch end" class="!justify-between">
+            <div fxFlex="150px">
+              <img src="./assets/1x.png" class="avatar" alt="">
+            </div>
             <div fxLayout="column" fxLayoutGap="8px">
               <div fxFlex="100" fxLayout="row" fxLayoutGap="114px" *ngFor="let info of baseInfo">
                 <div fxFlex="42px" fxLayoutAlign="space-between" [innerHTML]="info.title | splitWrap"></div>
@@ -14,9 +17,6 @@
               </div>
             </div>
           </div>
-          <div fxFlex="150px">
-            <img src="./assets/1x.png" class="avatar" alt="">
-          </div>
         </div>
       </mat-card-content>
       <mat-card-content>
@@ -26,157 +26,119 @@
 
     <mat-card class="mat-elevation-z0">
       <mat-card-content>
-        <mat-card-title>简介</mat-card-title>
+        <mat-card-title>关于我</mat-card-title>
         <mat-divider></mat-divider>
       </mat-card-content>
       <mat-card-content>
-        <p>2012年底开始从事开发工作，7年LAMP（Linux/Apache/MySQL/PHP）技术栈开发经验，10年前端开发经验。</p>
-        <p>熟悉三大框架（Angular/React/Vue3），有5年Typescript使用经验，有2年的Java和Golang开发经验，熟悉Docker/Docker GoSDK。</p>
-        <p>熟悉PostgreSQL, MySQL, SQLite, 熟悉Linux系统（Ubuntu）</p>
-        <p>有使用 <b>Fabric.js</b> 绘图经验，和使用 <b>ElectronJS</b> 客户端开发经验</p>
+        <p>2012年底开始从事开发工作, 是一个持续学习/跑步/电动滑板爱好者, IDEA Ultimate正版用户! 有过一次失败创业经历.</p>
+        <p>有11年前端开发经验, 以及4年JAVA开发经验, 熟悉Hibernate, 熟悉MySQL/PostgreSQL.</p>
+        <p>前端熟悉三大框架（Vue3/Angular12+/17/React）, 熟悉Taro栈小程序开发，两年tailwind CSS经验, 有6年Typescript使用经验，熟悉Docker(不包括k8s)</p>
+        <div class="overflow-hidden rounded-lg bg-gray-800 text-white shadow my-2">
+          <div class="p-3">
+            <p class="text-base font-semibold leading-2">ng/ts项目</p>
+            <a href="https://github.com/opensponsor/opensponsor-website" target="_blank">https://github.com/opensponsor/opensponsor-website</a>
+          </div>
+          <div class="p-3 pt-0">
+            <p class="text-base font-semibold leading-2">React+FabricJs图片编辑器</p>
+            <a href="https://github.com/foxsir/book-conver-generator" target="_blank">https://github.com/foxsir/book-conver-generator</a>
+          </div>
+          <div class="p-3 pt-0">
+            <p class="text-base font-semibold leading-2">Chrome插件</p>
+            <a href="https://github.com/foxsir/get-behance-images" target="_blank">https://github.com/foxsir/get-behance-images</a>
+          </div>
+          <div class="p-3 pt-0">
+            <p class="text-base font-semibold leading-2">Golang开发的私有存储注册表(registry/v2)</p>
+            <a href="https://github.com/programschool/docker-registry" target="_blank">https://github.com/programschool/docker-registry</a>
+          </div>
+          <div class="p-3 pt-0">
+            <p class="text-base font-semibold leading-2">Java项目</p>
+            <a href="https://github.com/programschool/docker-registry" target="_blank">https://github.com/programschool/docker-registry</a>
+          </div>
+        </div>
+        <p>目前在使用Quarkus.io/OpenAPi-v3/swagger</p>
+        <div class="overflow-hidden rounded-lg bg-gray-800 text-white shadow my-2">
+          <div class="p-3">
+            <p class="text-base font-semibold leading-2">Java/Quarkus项目</p>
+            <a href="https://github.com/opensponsor/opensponsor-api" target="_blank">https://github.com/opensponsor/opensponsor-api</a>
+          </div>
+        </div>
+        <p>熟悉Linux系统, 以及云阿里云服务生态包括: ECS、短信、支付、OSS等</p>
+        <p>近期学习内容Rust/WASM</p>
+        <div class="overflow-hidden rounded-lg bg-gray-800 text-white shadow my-2">
+          <div class="p-3">
+            <p class="text-base font-semibold leading-2">Rust</p>
+            <p><a href="https://github.com/foxsir/ruststart" target="_blank">https://github.com/foxsir/ruststart</a></p>
+            <p><a href="https://github.com/foxsir/minigrep" target="_blank">https://github.com/foxsir/minigrep</a></p>
+          </div>
+        </div>
       </mat-card-content>
     </mat-card>
 
     <mat-card class="mat-elevation-z0">
       <mat-card-content>
-        <mat-card-title>技术栈介绍</mat-card-title>
+        <mat-card-title>技术栈</mat-card-title>
         <mat-divider></mat-divider>
       </mat-card-content>
       <mat-card-content>
-        <div fxLayout="column" fxLayoutGap="6px">
-          <div fxFlex="auto">
-            <h3>前端</h3>
+        <div class="grid grid-cols-2 gap-6 justify-start items-center">
+          <div class="w-full">
+            <div>Vue3</div>
+            <mat-progress-bar value="80" class="!h-[8px] rounded-lg"></mat-progress-bar>
           </div>
-          <div fxFlex="auto">
-            <p><b>前端基础：</b> 熟悉JS/ES6/Typescript/CSS/SCSS，能编写独⽴npm模块，可以使⽤js/golang写命令⾏程序</p>
-            <p><b>前端框架：</b> 熟悉主流前端框架开发以及周边⽣态 <b>（Angular、React、VUE3）</b></p>
-            <p><b>PC客户端：</b> 使用ElectronJS完成过两个客户端项目 (IM客户端和数据可视化客户端)</p>
-            <p><b>其他：</b> 使用Fabric.js开发过图表绘制（刻度线、轮廓线，简单图形编辑），使用maker.js开发AutoCAD DXF文件导出功能</p>
-          </div>
-        </div>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="column" fxLayoutGap="6px">
-          <div fxFlex="auto">
-            <h3>后端</h3>
-          </div>
-          <div fxFlex="auto">
-            <p><b>Java：</b>两年Java开发经验，主要使用SpringBoot，和Spring Security、JWT，Gson等组件，以及阿里云短/信支付SDK。</p>
-            <p><b>GoLang：</b>使用Go开发Docker SDK，框架使用Echo。</p>
-            <p><b>PHP：</b>12-19年，7年时间使用PHP开发后端程序。</p>
-            <p><b>Docker：</b>熟悉docker cli/docker compose常用命令，熟悉镜像制作，有开发Docker SDK经验，熟悉Dockerfile编写</p>
-            <p><b>Linux：</b>主要使用Ubuntu，可以编写Service，熟悉云服务部署流程，Shell编写</p>
-          </div>
-        </div>
-      </mat-card-content>
-    </mat-card>
 
-    <mat-card class="mat-elevation-z0">
-      <mat-card-content>
-        <mat-card-title>最近项目</mat-card-title>
-        <mat-divider></mat-divider>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">
-            <div fxLayout="row" fxLayoutAlign="space-between">
-              <mat-card-subtitle class="font primary">报告填报系统表单</mat-card-subtitle>
-              <mat-card-subtitle>负责前端</mat-card-subtitle>
-            </div>
-            <p>React17 + Antd4 + mobx</p>
-            <div fxLayout="row">
-              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
-              <mat-chip-list aria-label="Fish selection">
-                <mat-chip>React 17</mat-chip>
-                <mat-chip>mobx</mat-chip>
-              </mat-chip-list>
-            </div>
+          <div class="w-full">
+            <div>Angular</div>
+            <mat-progress-bar value="85" class="!h-[8px] rounded-lg"></mat-progress-bar>
           </div>
-        </div>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">
-            <div fxLayout="row" fxLayoutAlign="space-between">
-              <mat-card-subtitle class="font primary">数据可视化客户端</mat-card-subtitle>
-              <mat-card-subtitle>负责前端</mat-card-subtitle>
-            </div>
-            <p>Angular V14 + Electron + SQLite客户端项目</p>
-            <div fxLayout="row">
-              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
-              <mat-chip-list aria-label="Fish selection">
-                <mat-chip>Angular 14</mat-chip>
-                <mat-chip>Material Angular</mat-chip>
-                <mat-chip>Electron</mat-chip>
-                <mat-chip>SQLite</mat-chip>
-              </mat-chip-list>
-            </div>
+
+          <div class="w-full">
+            <div>Tailwind CSS</div>
+            <mat-progress-bar value="80" class="!h-[8px] rounded-lg"></mat-progress-bar>
           </div>
-        </div>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">
-            <div fxLayout="row" fxLayoutAlign="space-between">
-              <mat-card-subtitle class="font primary">公司平台网站（React）</mat-card-subtitle>
-              <mat-card-subtitle>前端组长</mat-card-subtitle>
-            </div>
-            <p>使用React17+Chakra-ui开发的社区类型网站 (<a target="_blank" href="https://www.maplecloudy.com/">maplecloudy.com</a>)</p>
-            <div fxLayout="row">
-              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
-              <mat-chip-list aria-label="Fish selection">
-                <mat-chip>React</mat-chip>
-                <mat-chip>Chakra-ui</mat-chip>
-                <mat-chip>useRequest</mat-chip>
-                <mat-chip>Hooks</mat-chip>
-              </mat-chip-list>
-            </div>
+
+          <div class="w-full">
+            <div>React</div>
+            <mat-progress-bar value="60" class="!h-[8px] rounded-lg"></mat-progress-bar>
           </div>
-        </div>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">
-            <div fxLayout="row" fxLayoutAlign="space-between">
-              <mat-card-subtitle class="font primary">通讯软件PC客户端</mat-card-subtitle>
-              <mat-card-subtitle>PC端负责人</mat-card-subtitle>
-            </div>
-            <p>基于Angular+Electron和SQLite3开发聊天软件客户端（Windows）, 负责PC端架构和开发工作，后端API对接</p>
-            <p>项目难点：1. 解决打开多窗口问题 2. 开发虚拟列表滚动组件（随机高度Item）</p>
-            <div fxLayout="row">
-              <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
-              <mat-chip-list aria-label="Fish selection">
-                <mat-chip>Electron</mat-chip>
-                <mat-chip>SQLite3</mat-chip>
-                <mat-chip>Angular/Material</mat-chip>
-                <mat-chip>Typescript</mat-chip>
-                <mat-chip>WebSocket</mat-chip>
-              </mat-chip-list>
-            </div>
+
+          <div class="w-full">
+            <div>TaroJs & 小程序</div>
+            <mat-progress-bar value="75" class="!h-[8px] rounded-lg"></mat-progress-bar>
           </div>
-        </div>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">
-            <div>
-              <div fxLayout="row" fxLayoutAlign="space-between">
-                <mat-card-subtitle class="font primary">在线编程平台（Angular）</mat-card-subtitle>
-                <mat-card-subtitle>项目负责人</mat-card-subtitle>
-              </div>
-              <p>一个在线交互式编程学习网站，可在线运行多种编程语言代码，具有完整项目运行能力。负责网站整体架构和开发</p>
-              <p>难点：1. 集成Web代码编辑器 2. 自研Docker镜像存储系统 3. Docker SDK开发</p>
-              <div fxLayout="row">
-                <div fxFlex="70px" style="height: 32px;" class="mat-button" fxLayoutAlign="center center">相关技术：</div>
-                <mat-chip-list aria-label="Fish selection">
-                  <mat-chip>Java/Golang</mat-chip>
-                  <mat-chip>Angular/Typescript</mat-chip>
-                  <mat-chip>PostgreSQL</mat-chip>
-                  <mat-chip>Docker</mat-chip>
-                  <mat-chip>Linux</mat-chip>
-                </mat-chip-list>
-              </div>
-            </div>
+
+          <div class="w-full">
+            <div>Java</div>
+            <mat-progress-bar value="55" class="!h-[8px] rounded-lg"></mat-progress-bar>
+          </div>
+
+          <div class="w-full">
+            <div>Java</div>
+            <mat-progress-bar value="55" class="!h-[8px] rounded-lg"></mat-progress-bar>
+          </div>
+
+          <div class="w-full">
+            <div>Docker</div>
+            <mat-progress-bar value="75" class="!h-[8px] rounded-lg"></mat-progress-bar>
+          </div>
+
+          <div class="w-full">
+            <div>Golang</div>
+            <mat-progress-bar value="30" class="!h-[8px] rounded-lg"></mat-progress-bar>
+          </div>
+
+          <div class="w-full">
+            <div>Rust</div>
+            <mat-progress-bar value="10" class="!h-[8px] rounded-lg"></mat-progress-bar>
+          </div>
+
+          <div class="w-full">
+            <div>跑步</div>
+            <mat-progress-bar value="75" class="!h-[8px] rounded-lg"></mat-progress-bar>
+          </div>
+
+          <div class="w-full">
+            <div>电动滑板</div>
+            <mat-progress-bar value="80" class="!h-[8px] rounded-lg"></mat-progress-bar>
           </div>
         </div>
       </mat-card-content>

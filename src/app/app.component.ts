@@ -21,10 +21,10 @@ export class AppComponent {
   panelOpenState2 = false;
 
   baseInfo = [
-    {title: '霍建营', value: '10年开发经验（12年至今）'},
+    {title: '霍建营', value: '11年开发经验（12底年至今）'},
     {title: '电话', value: '<a href="tel:16631132230">16631132230</a>'},
     {title: '邮箱', value: '<a href="mailto:838394225@qq.com">838394225@qq.com</a>'},
-    {title: '意向', value: '高级前端开发'},
+    {title: '意向', value: '前端开发/全栈工程师'},
   ];
 
   projectList: Project[] = [
@@ -68,6 +68,22 @@ export class AppComponent {
   ];
 
   companies = [
+    {
+      dateRange: '2023-02 - 至今',
+      name: '北京枫数网络科技有限公司',
+      role: '高级前端工程师',
+      works: [
+        '电商平台Web和小程序开发'
+      ]
+    },
+    {
+      dateRange: '2022-02 - 2023-01',
+      name: '北京枫数网络科技有限公司',
+      role: '高级前端工程师',
+      works: [
+        '社区项目前端开发'
+      ]
+    },
     {
       dateRange: '2021-06 - 2022-01',
       name: '北京禾下网络科技有限公司',
@@ -121,6 +137,7 @@ export class AppComponent {
 
   links = [
     {text: 'Github', href: 'https://github.com/foxsir'},
+    {text: 'Github', href: 'https://github.com/opensponsor'},
     // {text: 'MD编辑器（规划中）', href: 'https://github.com/fluentwrite/fluentwrite'},
     // {text: 'Java 网站后台', href: 'https://github.com/licenseair/licenseair-backend'},
     // {text: 'Go Proxy', href: 'https://github.com/programschool/proxy-service'},

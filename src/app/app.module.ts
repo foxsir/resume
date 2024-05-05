@@ -14,26 +14,28 @@ import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
 import {SharedModule} from './shared/shared.module';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatProgressBarModule} from '@angular/material/progress-bar';
 
 @NgModule({
   declarations: [
     AppComponent
   ],
-  imports: [
-    BrowserModule,
-    BrowserAnimationsModule,
-    AppRoutingModule,
-    FlexLayoutModule,
-    MatButtonModule,
-    MatCardModule,
-    MatIconModule,
-    MatToolbarModule,
-    MatDividerModule,
-    MatListModule,
-    MatExpansionModule,
-    SharedModule,
-    MatChipsModule
-  ],
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        FlexLayoutModule,
+        MatButtonModule,
+        MatCardModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatDividerModule,
+        MatListModule,
+        MatExpansionModule,
+        SharedModule,
+        MatChipsModule,
+        MatProgressBarModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })
