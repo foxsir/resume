@@ -70,7 +70,7 @@ export class AppComponent {
   companies = [
     {
       dateRange: '2023-02 - 至今',
-      name: '北京枫数网络科技有限公司',
+      name: '北京天下石仓网络科技有限公司',
       role: '高级前端工程师',
       works: [
         '电商平台Web和小程序开发'
