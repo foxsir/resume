@@ -154,6 +154,31 @@
 
     <mat-card class="mat-elevation-z0">
       <mat-card-content>
+        <mat-card-title>项目介绍</mat-card-title>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-content>
+        <div fxLayout="column" fxLayoutGap="16px">
+          <div fxLayout="row" fxLayoutGap="6px" *ngFor="let project of projectList">
+            <div fxFlex="150px">{{project.name}}</div>
+            <div fxFlex="auto flex flex-col gap-4">
+              <div fxLayout="row" fxLayoutAlign="space-between">
+                <mat-card-subtitle class="font primary">{{project.site}}</mat-card-subtitle>
+                <mat-card-subtitle>{{project.type}}</mat-card-subtitle>
+              </div>
+              <div class="font-bold whitespace-nowrap">{{project.job}}</div>
+              <div *ngFor="let stack of project.stacks" class="flex gap-2">
+                <div class="whitespace-nowrap">{{stack.name}}: </div>
+                <div>{{stack.intro}}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </mat-card-content>
+    </mat-card>
+
+    <mat-card class="mat-elevation-z0">
+      <mat-card-content>
         <mat-card-title>工作经历</mat-card-title>
         <mat-divider></mat-divider>
       </mat-card-content>
@@ -161,12 +186,25 @@
         <div fxLayout="column" fxLayoutGap="16px">
           <div fxLayout="row" fxLayoutGap="6px" *ngFor="let com of companies">
             <div fxFlex="150px">{{com.dateRange}}</div>
-            <div fxFlex="auto">
+            <div fxFlex="auto flex flex-col gap-4">
               <div fxLayout="row" fxLayoutAlign="space-between">
                 <mat-card-subtitle class="font primary">{{com.name}}</mat-card-subtitle>
                 <mat-card-subtitle>{{com.role}}</mat-card-subtitle>
               </div>
               <div *ngFor="let work of com.works">{{work}}</div>
+              <section *ngIf="com.links">
+                <div *ngFor="let link of com.links" class="flex flex-col gap-4 mt-6">
+                  <div class="flex flex-col gap-2">
+                    <div class="font-bold">{{link.label}}</div>
+                    <div *ngIf="link.img">
+                      <img [src]="link.img" class="h-32 h-32" alt="">
+                    </div>
+                    <div *ngIf="link.href">
+                      <a [href]="link.href" class="text-blue-500" target="_blank">{{link.href}}</a>
+                    </div>
+                  </div>
+                </div>
+              </section>
             </div>
           </div>
         </div>
