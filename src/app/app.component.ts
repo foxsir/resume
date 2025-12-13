@@ -122,8 +122,8 @@ export class AppComponent {
       name: '北京天下石仓网络科技有限公司',
       role: '高级前端工程师',
       links: [
-        {label: '微信小程序: 天下石仓', img: '/assets/天下石仓.jpeg'},
-        {label: '微信小程序: 环球选材', img: '/assets/环球.jpeg'},
+        {label: '微信小程序: 天下石仓'},
+        {label: '微信小程序: 环球选材'},
         {label: '天下石仓网站', href: 'https://tianxiashicang.com/'},
         {label: '环球选材网站', href: 'https://stoneart.umggwall.com/'},
       ],
