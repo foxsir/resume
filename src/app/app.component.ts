@@ -23,13 +23,24 @@ export class AppComponent {
   panelOpenState2 = false;
 
   baseInfo = [
-    {title: '霍建营', value: '11年开发经验（12底年至今）'},
+    {title: '霍建营', value: '12+年开发经验'},
     {title: '电话', value: '<a href="tel:16631132230">16631132230</a>'},
     {title: '邮箱', value: '<a href="mailto:838394225@qq.com">838394225@qq.com</a>'},
     {title: '意向', value: '前端开发/全栈工程师'},
+    {title: 'GitHub', value: '<a target="_blank" href="https://github.com/foxsir">https://github.com/foxsir</a>'},
   ];
 
   projectList: Project[] = [
+    {
+      name: "云慕怀谷公司项目",
+      type: "web/小程序",
+      site: "https://www.yunmu13.cn/",
+      job: "负责公司管理后台和小程序开发",
+      intro: "网络祭祀相关业务应用",
+      stacks: [
+        {name: "项目前端", intro: "React、Typescript、Taro"},
+      ],
+    },
     {
       name: "环球选材网站",
       site: "https://stoneart.umggwall.com",
@@ -118,12 +129,25 @@ export class AppComponent {
 
   companies = [
     {
-      dateRange: '2023-02 - 至今',
+      dateRange: '2024-12 - 至今',
+      name: '北京云慕怀谷科技有限公司',
+      role: '高级前端工程师',
+      links: [
+        {label: '微信小程序: 云祭扫'},
+        {label: '微信小程序: 园信通'},
+        {label: '管理后台'},
+      ],
+      works: [
+        '负责公司管理后台管法、公司小程序开发，使用react、tarojs'
+      ]
+    },
+    {
+      dateRange: '2023-02 - 2024-11',
       name: '北京天下石仓网络科技有限公司',
       role: '高级前端工程师',
       links: [
-        {label: '微信小程序: 天下石仓', img: '/assets/天下石仓.jpeg'},
-        {label: '微信小程序: 环球选材', img: '/assets/环球.jpeg'},
+        {label: '微信小程序: 天下石仓'},
+        {label: '微信小程序: 环球选材'},
         {label: '天下石仓网站', href: 'https://tianxiashicang.com/'},
         {label: '环球选材网站', href: 'https://stoneart.umggwall.com/'},
       ],
