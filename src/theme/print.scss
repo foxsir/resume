@@ -1,15 +1,30 @@
 @media print {
-  * {
-    page-break-after: avoid;
+  @page {
+    margin: 12mm;
   }
 
-  table {
-    page-break-inside: avoid;
-    page-break-after: avoid;
-    page-break-before: avoid;
+  // 卡片：去阴影，改细边框（打印更清晰）
+  mat-card {
+    box-shadow: none !important;
+    border: 1px solid #e0e0e0;
+  }
 
-    tr {
-      page-break-inside: avoid;
-    }
+  // 分页控制：项目/工作经历条目不可跨页截断
+  mat-card-content > .flex-col > * {
+    break-inside: avoid;
+  }
+
+  // 深色"关于我"块 → 浅色（省墨、ATS 友好）
+  .bg-gray-800 {
+    background: #f5f5f5 !important;
+    color: #333 !important;
+    border: 1px solid #ddd;
+  }
+
+  // 需要保留颜色的元素
+  .avatar,
+  mat-progress-bar {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
   }
 }
