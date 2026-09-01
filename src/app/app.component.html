@@ -1,19 +1,19 @@
-<br>
-<br>
-
-<div fxLayout="row" fxLayoutAlign="center center">
-  <div fxFlex="90" fxFlex.gt-md="750px" fxLayout="column" fxLayoutAlign="space-between" fxLayoutGap="16px">
+<div class="flex justify-center py-8">
+  <div class="w-[90%] lg:w-[750px] lg:flex-none flex flex-col gap-4">
     <mat-card class="mat-elevation-z0">
       <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="4px">
-          <div fxFlex="auto" fxLayoutAlign="stretch end" class="!justify-between">
-            <div fxFlex="150px">
-              <img src="./assets/1x.png" class="avatar" alt="">
+        <div class="flex flex-row gap-1">
+          <div class="flex-auto flex items-stretch justify-between">
+            <div class="w-[150px] shrink-0">
+              <img src="./assets/1x.png" class="avatar" alt="头像">
             </div>
-            <div fxLayout="column" fxLayoutGap="8px">
-              <div fxFlex="100" fxLayout="row" fxLayoutGap="114px" *ngFor="let info of baseInfo">
-                <div fxFlex="42px" fxLayoutAlign="space-between" [innerHTML]="info.title | splitWrap"></div>
-                <div fxFlex="auto" [innerHTML]="info.value"></div>
+            <div class="flex flex-col gap-2">
+              <div class="w-full flex flex-row gap-[114px]" *ngFor="let info of baseInfo">
+                <div class="w-[42px] shrink-0 flex justify-between" [innerHTML]="info.title | splitWrap"></div>
+                <div class="flex-auto">
+                  <a *ngIf="info.href; else plainText" [href]="info.href" [attr.target]="info.external ? '_blank' : null">{{info.value}}</a>
+                  <ng-template #plainText>{{info.value}}</ng-template>
+                </div>
               </div>
             </div>
           </div>
@@ -31,8 +31,8 @@
       </mat-card-content>
       <mat-card-content>
         <p>2012年底开始从事开发工作</p>
-        <p>有12年前端开发经验, 以及4年JAVA开发经验, 熟悉Hibernate, 熟悉MySQL/PostgreSQL.</p>
-        <p>前端熟悉主流框架（Vue3/Angular12+/17/React）, 熟悉Taro栈小程序开发，3年tailwind CSS经验</p>
+        <p>有{{yearsOfExperience}}年前端开发经验, 以及4年JAVA开发经验, 熟悉Hibernate, 熟悉MySQL/PostgreSQL.</p>
+        <p>前端熟悉主流框架（Vue3/Angular 12~17/React）, 熟悉Taro栈小程序开发，3年tailwind CSS经验</p>
         <p>有7年Typescript使用经验</p>
         <p>熟悉Chrome/FireFox插件开发经验, 有Rust/WASM开发经验</p>
         <p>熟悉Linux系统(Ubuntu)</p>
@@ -44,10 +44,6 @@
           <div class="p-3 pt-0">
             <p class="text-base font-semibold leading-2">Angular/ts项目</p>
             <a href="https://github.com/opensponsor/opensponsor-website" target="_blank">https://github.com/opensponsor/opensponsor-website</a>
-          </div>
-          <div class="p-3 pt-0">
-            <p class="text-base font-semibold leading-2">React+FabricJs图片编辑器</p>
-            <a href="https://github.com/foxsir/book-conver-generator" target="_blank">https://github.com/foxsir/book-conver-generator</a>
           </div>
           <div class="p-3 pt-0">
             <p class="text-base font-semibold leading-2">Chrome插件</p>
@@ -77,54 +73,9 @@
       </mat-card-content>
       <mat-card-content>
         <div class="grid grid-cols-2 gap-6 justify-start items-center">
-          <div class="w-full">
-            <div>Vue3</div>
-            <mat-progress-bar value="80" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>React</div>
-            <mat-progress-bar value="80" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>Tailwind CSS</div>
-            <mat-progress-bar value="80" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>Angular</div>
-            <mat-progress-bar value="80" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>TaroJs & 小程序</div>
-            <mat-progress-bar value="75" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>Java</div>
-            <mat-progress-bar value="55" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>Java</div>
-            <mat-progress-bar value="55" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>Docker</div>
-            <mat-progress-bar value="75" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>Golang</div>
-            <mat-progress-bar value="30" class="!h-[8px] rounded-lg"></mat-progress-bar>
-          </div>
-
-          <div class="w-full">
-            <div>Rust</div>
-            <mat-progress-bar value="20" class="!h-[8px] rounded-lg"></mat-progress-bar>
+          <div class="w-full" *ngFor="let skill of skills">
+            <div>{{skill.name}}</div>
+            <mat-progress-bar [value]="skill.value" class="!h-[8px] rounded-lg"></mat-progress-bar>
           </div>
         </div>
       </mat-card-content>
@@ -135,14 +86,11 @@
         <mat-divider></mat-divider>
       </mat-card-content>
       <mat-card-content>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">河北司法警官职业学院</div>
+        <div class="flex flex-row gap-1.5">
+          <div class="flex-auto">河北司法警官职业学院 · 计算机（专科）</div>
         </div>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">北京兄弟连LAMP培训</div>
-        </div>
-        <div fxLayout="row" fxLayoutGap="6px">
-          <div fxFlex="auto">高中</div>
+        <div class="flex flex-row gap-1.5">
+          <div class="flex-auto">北京兄弟连LAMP培训</div>
         </div>
       </mat-card-content>
     </mat-card>
@@ -153,11 +101,11 @@
         <mat-divider></mat-divider>
       </mat-card-content>
       <mat-card-content>
-        <div fxLayout="column" fxLayoutGap="16px">
-          <div fxLayout="row" fxLayoutGap="6px" *ngFor="let project of projectList">
-            <div fxFlex="150px">{{project.name}}</div>
-            <div fxFlex="auto flex flex-col gap-4">
-              <div fxLayout="row" fxLayoutAlign="space-between">
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row gap-1.5" *ngFor="let project of projectList">
+            <div class="w-[150px] shrink-0">{{project.name}}</div>
+            <div class="flex-auto flex flex-col gap-4">
+              <div class="flex flex-row justify-between">
                 <mat-card-subtitle class="font primary">{{project.site}}</mat-card-subtitle>
                 <mat-card-subtitle>{{project.type}}</mat-card-subtitle>
               </div>
@@ -178,11 +126,11 @@
         <mat-divider></mat-divider>
       </mat-card-content>
       <mat-card-content>
-        <div fxLayout="column" fxLayoutGap="16px">
-          <div fxLayout="row" fxLayoutGap="6px" *ngFor="let com of companies">
-            <div fxFlex="150px">{{com.dateRange}}</div>
-            <div fxFlex="auto flex flex-col gap-4">
-              <div fxLayout="row" fxLayoutAlign="space-between">
+        <div class="flex flex-col gap-4">
+          <div class="flex flex-row gap-1.5" *ngFor="let com of companies">
+            <div class="w-[150px] shrink-0">{{com.dateRange}}</div>
+            <div class="flex-auto flex flex-col gap-4">
+              <div class="flex flex-row justify-between">
                 <mat-card-subtitle class="font primary">{{com.name}}</mat-card-subtitle>
                 <mat-card-subtitle>{{com.role}}</mat-card-subtitle>
               </div>
@@ -192,7 +140,7 @@
                   <div class="flex flex-col gap-2">
                     <div class="font-bold">{{link.label}}</div>
                     <div *ngIf="link.img">
-                      <img [src]="link.img" class="h-32 h-32" alt="">
+                      <img [src]="link.img" class="h-32 w-32" [alt]="link.label">
                     </div>
                     <div *ngIf="link.href">
                       <a [href]="link.href" class="text-blue-500" target="_blank">{{link.href}}</a>
@@ -205,23 +153,5 @@
         </div>
       </mat-card-content>
     </mat-card>
-
-    <mat-card class="mat-elevation-z0">
-      <mat-card-content>
-        <mat-card-title>Links</mat-card-title>
-        <mat-divider></mat-divider>
-      </mat-card-content>
-      <mat-card-content>
-        <div fxLayout="column" fxLayoutGap="16px">
-          <div fxLayout="row" fxLayoutGap="6px" *ngFor="let link of links">
-            <div fxFlex="150px">{{link.text}}</div>
-            <div fxFlex="auto"><a [href]="link.href" target="_blank">{{link.href}}</a></div>
-          </div>
-        </div>
-      </mat-card-content>
-    </mat-card>
   </div>
 </div>
-
-<br>
-<br>

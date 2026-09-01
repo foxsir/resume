@@ -5,7 +5,6 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import {MatButtonModule} from '@angular/material/button';
-import {FlexLayoutModule} from '@angular/flex-layout';
 import {MatCardModule} from '@angular/material/card';
 import {MatIconModule} from '@angular/material/icon';
 import {MatToolbarModule} from '@angular/material/toolbar';
@@ -24,7 +23,6 @@ import {MatProgressBarModule} from '@angular/material/progress-bar';
         BrowserModule,
         BrowserAnimationsModule,
         AppRoutingModule,
-        FlexLayoutModule,
         MatButtonModule,
         MatCardModule,
         MatIconModule,
