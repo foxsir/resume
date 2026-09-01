@@ -152,7 +152,8 @@ export class AppComponent {
         {label: '管理后台'},
       ],
       works: [
-        '负责公司管理后台开发、公司小程序开发，使用react、tarojs'
+        '负责公司管理后台开发、公司小程序开发，使用react、tarojs',
+        '建立基于 opencode + skills 的 AI Agent 开发工作流，覆盖需求拆解、编码、测试全流程，独立完成管理后台和多个小程序交付'
       ]
     },
     {
