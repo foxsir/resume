@@ -77,6 +77,17 @@ export class AppComponent {
       ],
     },
     {
+      name: "多端 AI Agent",
+      site: "https://github.com/microprofile-inc/agent",
+      type: "个人项目",
+      job: "独立设计开发（AI Agent 协作编码）",
+      intro: "自研多端 AI Agent：基于艾宾浩斯遗忘曲线的双层记忆系统（普通记忆随时间衰减、命中强化、低于阈值遗忘；关键记忆(hard)永不衰减），结合向量检索与相似记忆自动合并；terminal/web/桌面三端复用同一核心引擎，多供应商接入、think/act双模式",
+      stacks: [
+        {name: "核心引擎", intro: "Python、FastAPI、SSE 流式"},
+        {name: "客户端", intro: "React Web、Textual TUI、Tauri(规划中)"},
+      ],
+    },
+    {
       name: "云慕怀谷公司项目",
       type: "web/小程序",
       site: "https://www.yunmu13.cn/",
